@@ -4,9 +4,9 @@ public class Tax {
 	public float Annual_salary= 0;
 
 
-	public String userName (String name) {
+	public void userName (String name) {
 		
-		return name;
+		system.out.println("User Name: " + name);
 
 	}
 	
@@ -19,14 +19,14 @@ public class Tax {
 		
 	}
 	
-	public String Tax_Category () {
+	public void Tax_Category () {
 		if (Annual_salary <= 21000 && Annual_salary < 32500) {
-			return "10% tax";
+			system.out.println("Tax Band 10% paying: " + (Annual_salary * 0.1);
 		} else if (Annual_salary > 21000 && Annual_salary <= 32500) {
-			return "20% tax";
+			system.out.println("Tax Band 20% paying: " + (Annual_salary * 0.2);;
 	 
 	} else {
-		return "40% tax";
+		system.out.println("Tax Band 40% paying: " + (Annual_salary * 0.4);
 	}
 
 	}
